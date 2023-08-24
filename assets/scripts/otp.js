@@ -43,7 +43,7 @@ function otpapi(otpnum, phone) {
     redirect: "follow",
     crossDomain: true,
     headers: {
-      Accept: "application/json",
+      Accept: '*/*',
     },
   };
 

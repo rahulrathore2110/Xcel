@@ -1,0 +1,101 @@
+img {
+    width: 100px;
+    text-align: center;
+}
+
+body{
+    background-image: url("../images/bg2.jpg");
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    align-content: center;
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.last> :first-child {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.last> :first-child div {
+    display: flex;
+    justify-content: center;
+}
+
+.last> :last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.last .fa-brands,
+.last .fa-solid {
+    color: white;
+    font-size: large;
+    background-color: #1e39a5;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last> :last-child .fa-solid {
+    display: grid;
+    padding: 10px 50px;
+    background-color: #f7941d;
+
+}
+
+.contact{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto ;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+@media screen and (max-width: 550px) {
+    .last {
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+
+    .last> :last-child h1 {
+        font-size: 24px;
+        margin: 20px 0px;
+    }
+
+    .outer {
+        padding: 10px;
+    }
+
+    .contact{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

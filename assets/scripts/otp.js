@@ -43,12 +43,13 @@ function otpapi(otpnum, phone) {
     redirect: "follow",
     crossDomain: true,
     headers: {
-      'Accept': 'application/json',
+      Accept: "application/json",
     },
   };
 
   fetch(
-    `https://sms.xcelmarketing.in/api/SmsApi/SendSingleAdvance?UserID=XCEL&Password=Om@nlum5749NL&SenderID=FABMTC&Phno=${phone}&Msg=Thank you for showing your interest in FABMEDIATECH . your mobile verification OTP is ${otpnum}. Do not share OTP with anyone.&TemplateID=219931`,
+    `http://sms.xcelmarketing.in/api/SmsApi/SendSingleApi?UserID=XCEL&Password=Om@nlum5749NL&SenderID=XCLSMS&Phno=${phone}&Msg=Thank you for showing your interest in Xcel Marketing. your mobile verification OTP is ${otpnum}. Do not share OTP with anyone.
+&EntityID=1701159834356736157&TemplateID=1707168965160700422`,
     requestOptions
   )
     .then((response) => response.text())

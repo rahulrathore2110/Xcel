@@ -24,6 +24,8 @@
     .testimonials>p {
         font-size: 14px;
     }
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -62,6 +64,10 @@
 
     .client img {
         width: 70px;
+    }
+
+    .otp-popup {
+        padding: 20px;
     }
 }
 
@@ -111,6 +117,6 @@
         color: black;
     }
 
-  
+
 
 }

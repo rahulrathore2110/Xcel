@@ -18,10 +18,8 @@ function showotpform(e) {
     if (getotpbtn.innerText == "GET OTP") {
       otpapi(otpnum, phone);
     } else {
-      alert("Already verfied")
+      alert("Already verfied");
     }
-
-    
   } else {
     alert("plz enter correct number");
   }
@@ -44,11 +42,13 @@ function otpapi(otpnum, phone) {
     method: "GET",
     redirect: "follow",
     crossDomain: true,
-    headers: { Accept: "application/json" },
+    headers: {
+      'Accept': 'application/json',
+    },
   };
 
   fetch(
-    `http://sms.xcelmarketing.in/api/SmsApi/SendSingleAdvance?UserID=XCEL&Password=Om@nlum5749NL&SenderID=FABMTC&Phno=${phone}&Msg=Thank you for showing your interest in FABMEDIATECH . your mobile verification OTP is ${otpnum}. Do not share OTP with anyone.&TemplateID=219931`,
+    `https://sms.xcelmarketing.in/api/SmsApi/SendSingleAdvance?UserID=XCEL&Password=Om@nlum5749NL&SenderID=FABMTC&Phno=${phone}&Msg=Thank you for showing your interest in FABMEDIATECH . your mobile verification OTP is ${otpnum}. Do not share OTP with anyone.&TemplateID=219931`,
     requestOptions
   )
     .then((response) => response.text())

@@ -1,8 +1,8 @@
 .otp-popup {
     position: fixed;
     top: 30%;
-    left: 40%;
-    /* display: none; */
+    left: 50%;
+    transform: translate(-50%, 0);
     visibility: hidden;
     background-color: #1e39a5;
     color: white;

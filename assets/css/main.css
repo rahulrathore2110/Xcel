@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color : #1e39a5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+#main-container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+/* ############################ Navbar ######################## */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+.hamburger {
+    display: none;
+    /* z-index: 1000; */
+}
+
+#close{
+    visibility: hidden;
+    z-index: 999;
+}
+#close a{
+    color: white;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    max-width: 1480px;
+    margin: auto;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#navbar > :nth-child(2){
+    display: flex;
+}
+
+#navbar img {
+    width: 100px;
+}
+
+.nav-social {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 5px 20px;
+    justify-content: flex-end   ;
+    gap: 15px;
+}
+
+.nav-social div {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav-social div:hover {
+    background-color: black;
+    transition: 0.1s ease-in;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 12px;
+
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items ul li {
+    margin: 0px 20px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.nav-items ul li a{
+    color: black;
+    font-size: 13px;
+}
+
+.nav-items ul li a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-btn {
+    text-align: right;
+    
+}
+
+.nav-btn a:hover{
+background-color: black;
+}
+.nav-btn a{
+    background-color: var(--primary-color);
+    text-decoration: none;    
+    padding: 7px 13px;
+    font-size: 13px;
+    
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.submit-btn{
+    display: flex;
+    align-items: center;
+}
+
+#submit{
+    padding: 10px 0px;
+}
+
+#verify{
+    background-color: rgb(11, 244, 11);
+    color: white;
+    padding: 0px 20px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* ############################ Hero Section ######################## */
+
+
+
+
+#hero-section {
+    display: grid;
+    margin-top: 150px;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+form {
+    display: grid;
+    row-gap: 20px;
+    padding: 5%;
+
+
+}
+
+.form-cont {
+    display: grid;
+}
+
+.form-cont h1 {
+    text-align: center;
+}
+
+.form-cont div {
+    display: flex;
+    gap: 5%;
+}
+
+.form-cont input,
+.form-cont select {
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-cont textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#submit {
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* ############################ Best Services Section ######################## */
+
+
+#best-service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+
+}
+
+#best-service div {
+    display: grid;
+    align-items: center;
+}
+
+#best-service img {
+    width: 90%;
+    margin: auto;
+}
+
+.bestservice-text h1 {
+    color: var(--primary-color);
+    margin: 20px;
+    text-align: left;
+}
+
+.bestservice-text p {
+    text-align: justify;
+    font-size: 14px;
+    color: #7a7787;
+}
+
+/* ############################ project ribben Section ######################## */
+
+#project-ribben {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 0px;
+}
+
+.ribben-tags {
+    display: flex;
+    max-width: 1180px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.ribben-tags div {
+    border-right: 1px solid;
+    padding: 0px 3%;
+}
+
+.ribben-tags > div :first-child {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.ribben-tags> :last-child {
+    border: none;
+}
+
+
+/* ############################ Services Section ######################## */
+
+#our-service {
+    text-align: center;
+    max-width: 1180px;
+    margin: auto;
+    padding: 30px 0px;
+    display: grid;
+    row-gap: 20px;
+
+}
+
+#our-service>p {
+    max-width: 550px;
+    margin: 20px auto;
+    color: #7a7787;
+}
+
+#our-service>div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+
+}
+
+.service-card img {
+    width: 50px;
+}
+
+.service-card {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding: 10px;
+}
+
+.service-card p {
+    color: #7a7787;
+}
+
+/* ############################ testimonial ######################## */
+
+/* i have use some project ribben classe here. because of the same structure */
+
+.testimonials{
+    display: grid;
+}
+
+.testimonials > :nth-child(3){
+    max-width: 650px;
+    margin: 20px 0px;
+}
+
+/* ############################ client ######################## */
+
+.client{
+    text-align: center;
+    padding: 30px 0px;
+    max-width: 1130px;
+    margin: auto;
+}
+
+.client > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.client h1{
+    margin: 20px 0px;
+}
+.client img{
+width: 100px;
+}
+
+/* ############################ footer ######################## */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    display: grid;
+    /* row-gap: 100px; */
+}
+
+footer img{
+    width: 150px;
+}
+
+footer .co-info{
+    text-align: center;
+    display: grid;
+    row-gap: 10px;
+}
+
+footer>:last-child{
+    /* background-color: #7a7787; */
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    border-top: 1px solid grey;
+}

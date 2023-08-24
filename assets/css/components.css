@@ -1,0 +1,42 @@
+.otp-popup {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    /* display: none; */
+    visibility: hidden;
+    background-color: #1e39a5;
+    color: white;
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.otp-popup input {
+    padding: 10px 30px;
+    color: white;
+}
+
+#otp-verfiy{
+    width: fit-content;
+    padding: 5px 25px;
+    background-color: #f7941d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#otp-verfiy:hover{
+    padding: 5px 80px;
+    transition: 0.4s cubic-bezier(0,0.3,0.6,1);
+}
+
+.otp-popup input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}

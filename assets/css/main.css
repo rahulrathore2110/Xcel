@@ -143,6 +143,7 @@ background-color: black;
 
 #submit{
     padding: 10px 0px;
+    display: none;
 }
 
 #verify{

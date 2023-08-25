@@ -16,8 +16,6 @@ function submitdata() {
   let service = document.querySelector("#service-drop").value;
   let msg = document.querySelector("#message").value;
 
-  console.log(name, email, phone, msg, service);
-
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
     window.location.href = "./thankyou.html";
@@ -51,7 +49,7 @@ function verifyotp() {
 
     getotpbtn.innerHTML = '<i class="fa-solid fa-check"></i>';
 
-    document.querySelector("#submit").removeAttribute("disabled");
+    document.querySelector("#submit").style.display="block"
   } else {
     alert("Enter Correct Otp");
   }

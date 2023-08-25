@@ -1,29 +1,26 @@
 document.querySelector("#otp-verfiy").addEventListener("click", verifyotp);
-
-let phone = document.querySelector("#phone").value;
-let name = document.querySelector("#name").value;
-let email = document.querySelector("#email").value;
-let service = document.querySelector("#service-drop").value;
-let msg = document.querySelector("#message").value;
-
 let otpnum = Math.floor(100000 + Math.random() * 900000);
-
 let otpform = document.querySelector(".otp-popup");
-
 let getotpbtn = document.getElementById("verify");
-
 let submitbtn = document.querySelector("form");
 
 getotpbtn.addEventListener("click", showotpform);
-
 submitbtn.addEventListener("submit", submitdata);
 
-function submitdata(name, phone, email, msg, service) {
+function submitdata() {
   event.preventDefault();
+
+  let phone = document.getElementById("phone").value;
+  let name = document.querySelector("#name").value;
+  let email = document.querySelector("#email").value;
+  let service = document.querySelector("#service-drop").value;
+  let msg = document.querySelector("#message").value;
+
+  console.log(name, email, phone, msg, service);
 
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
-    window.location.href="./thankyou.html"
+    window.location.href = "./thankyou.html";
   } else {
     alert("plz verify otp first");
   }

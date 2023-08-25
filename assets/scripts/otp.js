@@ -23,7 +23,7 @@ function submitdata(name, phone, email, msg, service) {
 
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
-    // window.location.href="./thankyou.html"
+    window.location.href="./thankyou.html"
   } else {
     alert("plz verify otp first");
   }

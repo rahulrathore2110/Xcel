@@ -86,7 +86,7 @@ function postdataapi(n, p, e, m, s) {
   };
 
   fetch(
-    `https://lms.xcelmarketing.in/API/SaveLeads?Name=${n}&Email=${e}&Phno=${p}&SourceId=2&CategoryId=4&CityID=1&Remarks=${m}`,
+    `https://lms.xcelmarketing.in/API/SaveLeads?Name=${n}&Email=${e}&Phno=${p}&SourceId=4&CategoryId=${s}&CityID=1&Remarks=${m}`,
     requestOptions
   )
     .then((response) => response.text())

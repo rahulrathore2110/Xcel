@@ -18,23 +18,16 @@ getotpbtn.addEventListener("click", showotpform);
 
 submitbtn.addEventListener("submit", submitdata);
 
-
-
-
-function submitdata(name,phone,email,msg,service) {
+function submitdata(name, phone, email, msg, service) {
   event.preventDefault();
 
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
-    window.location.href="./thankyou.html"
+    // window.location.href="./thankyou.html"
   } else {
     alert("plz verify otp first");
   }
-  
 }
-
-
-
 
 function showotpform(e) {
   e.preventDefault();
@@ -98,10 +91,10 @@ function postdataapi(n, p, e, m, s) {
   };
 
   fetch(
-    `https://lms.xcelmarketing.in/API/SaveLeads?Name=${n}&Email=${e}&Phno=${p}&SourceId=${s}&CategoryId=4&CityID=1&Remarks=${m}`,
+    `https://lms.xcelmarketing.in/API/SaveLeads?Name=${n}&Email=${e}&Phno=${p}&SourceId=2&CategoryId=4&CityID=1&Remarks=${m}`,
     requestOptions
   )
-    .then((response) => response.json())
+    .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
 }

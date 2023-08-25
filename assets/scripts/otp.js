@@ -16,6 +16,8 @@ function submitdata() {
   let service = document.querySelector("#service-drop").value;
   let msg = document.querySelector("#message").value;
 
+  console.log(phone,name,email,service,msg)
+
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
     window.location.href = "./thankyou.html";

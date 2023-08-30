@@ -431,18 +431,18 @@ form {
 /* ############################ footer ######################## */
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: rgb(185, 181, 181);
+    color: black;
     padding: 30px 20px;
     display: grid;
-    /* row-gap: 100px; */
 }
+
 
 footer img {
     width: 150px;
 }
 
-footer>div {
+footer > div {
     display: flex;
 }
 
@@ -457,11 +457,10 @@ footer .co-info {
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
-footer>:last-child {
-    /* background-color: #7a7787; */
+footer>:last-child {    
     margin-top: 30px;
     padding-top: 30px;
     padding-left: 10px;

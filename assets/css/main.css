@@ -455,6 +455,11 @@ footer .co-info {
     row-gap: 10px;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 footer>:last-child {
     /* background-color: #7a7787; */
     margin-top: 30px;

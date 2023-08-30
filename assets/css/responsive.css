@@ -4,11 +4,22 @@
         flex-direction: column-reverse;
     }
 
+    #our-service>div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .testimonials>p {
         font-size: 16px;
     }
 }
 
+
+@media screen and (max-width: 700px) {
+#hero-section{
+    align-items: stretch;
+}
+
+}
 
 
 @media screen and (max-width: 700px) {
@@ -25,6 +36,10 @@
         font-size: 14px;
     }
 
+        footer>div{
+            flex-direction: column;
+            gap: 10px;
+        }
 
 }
 
@@ -71,7 +86,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .hamburger {
         display: block;
         position: absolute;

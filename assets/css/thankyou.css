@@ -3,7 +3,7 @@ img {
     text-align: center;
 }
 
-body{
+body {
     background-image: url("../images/bg2.jpg");
 }
 
@@ -52,31 +52,43 @@ body{
     font-size: large;
     background-color: #1e39a5;
     padding: 10px;
-    border-radius: 20px;
-    height: 50px;
-    width: 50px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+.last .fa-brands:hover,
+.last .fa-solid:hover {
+    background-color: #f7941d;
+    transition: .2s ease-in;
+}
+
 .last> :last-child .fa-solid {
     display: grid;
-    padding: 10px 50px;
+    padding: 10px ;
     background-color: #f7941d;
 
 }
 
-.contact{
+.last> :last-child .fa-solid:hover{
+    background-color: #1e39a5;
+}
+
+.contact {
     display: flex;
     font-size: 13px;
     justify-content: space-between;
     padding: 10px;
     max-width: 600px;
-    margin: auto ;
+    margin: auto;
     border-top: 1px solid black;
     margin-top: 20px;
 }
+
 @media screen and (max-width: 550px) {
     .last {
         flex-direction: column;
@@ -93,7 +105,7 @@ body{
         padding: 10px;
     }
 
-    .contact{
+    .contact {
         flex-direction: column;
         text-align: center;
     }
